@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+
+        <!-- ============================= -->
+        <!-- TOP LOGO -->
+        <!-- ============================= -->
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="🔐"
+            android:textSize="42sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/logo_background"/>
+
+
+        <!-- ============================= -->
+        <!-- APP NAME -->
+        <!-- ============================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UniStay"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#5E35B1"
+            android:layout_marginTop="18dp"/>
+
+
+        <!-- ============================= -->
+        <!-- SUBTITLE -->
+        <!-- ============================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Your Perfect Stay"
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="28dp"/>
+
+
+        <!-- ============================= -->
+        <!-- OTP CARD -->
+        <!-- ============================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/login_card_background"
+            android:elevation="5dp">
+
+
+            <!-- TITLE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify Your Account ✨"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#29213D"/>
+
+
+            <!-- DESCRIPTION -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter the 6-digit OTP to complete your registration."
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <!-- EMAIL -->
+
+            <TextView
+                android:id="@+id/tvRegisterOtpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTP verification"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#673AB7"
+                android:gravity="center"
+                android:layout_marginBottom="22dp"/>
+
+
+            <!-- ============================= -->
+            <!-- OTP LABEL -->
+            <!-- ============================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter OTP"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp"/>
+
+
+            <!-- ============================= -->
+            <!-- OTP INPUT -->
+            <!-- ============================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="8dp"
+                android:background="@drawable/input_background">
+
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="🔢"
+                    android:textSize="20sp"/>
+
+
+                <EditText
+                    android:id="@+id/etRegisterOtp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Enter 6-digit OTP"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222"
+                    android:textColorHint="#999999"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:letterSpacing="0.25"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
+
+            </LinearLayout>
+
+
+            <!-- ============================= -->
+            <!-- VERIFY BUTTON -->
+            <!-- ============================= -->
+
+            <Button
+                android:id="@+id/btnVerifyRegisterOtp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="VERIFY &amp; CREATE ACCOUNT"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/login_button_background"
+                android:elevation="3dp"
+                android:layout_marginTop="25dp"/>
+
+
+            <!-- ============================= -->
+            <!-- RESEND OTP -->
+            <!-- ============================= -->
+
+            <Button
+                android:id="@+id/btnResendRegisterOtp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="RESEND OTP"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/register_button_background"
+                android:layout_marginTop="12dp"/>
+
+
+            <!-- SECURITY MESSAGE -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔒 Your account verification is secure"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+
+        <!-- ============================= -->
+        <!-- FOOTER -->
+        <!-- ============================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safe • Simple • Student Friendly"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

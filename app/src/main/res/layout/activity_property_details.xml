@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F4FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ========================= -->
+        <!-- ROOM PHOTOS TITLE -->
+        <!-- ========================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room Photos"
+            android:textColor="#29213D"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- ========================= -->
+        <!-- THREE ROOM PHOTOS -->
+        <!-- ========================= -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scrollbars="none"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- PHOTO 1 -->
+
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="220dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/property_photo_background"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/imgRoom1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Room Photo 1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Room 1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:background="#99000000" />
+
+                </FrameLayout>
+
+
+                <!-- PHOTO 2 -->
+
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="220dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/property_photo_background"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/imgRoom2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Room Photo 2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Room 2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:background="#99000000" />
+
+                </FrameLayout>
+
+
+                <!-- PHOTO 3 -->
+
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/property_photo_background"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/imgRoom3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Room Photo 3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Room 3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:background="#99000000" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <!-- ========================= -->
+        <!-- PROPERTY NAME -->
+        <!-- ========================= -->
+
+        <TextView
+            android:id="@+id/tvPropertyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Property Name"
+            android:textColor="#29213D"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+        <!-- OWNER -->
+
+        <TextView
+            android:id="@+id/tvOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Owner:"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+
+        <!-- LOCATION -->
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="📍 Location"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+
+        <!-- RENT -->
+
+        <TextView
+            android:id="@+id/tvRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="₹ 0 / Month"
+            android:textColor="#673AB7"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <!-- ROOM TYPE -->
+
+        <TextView
+            android:id="@+id/tvRoomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Room Type:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <!-- FOOD -->
+
+        <TextView
+            android:id="@+id/tvFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Food:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <!-- WIFI -->
+
+        <TextView
+            android:id="@+id/tvWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="WiFi:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <!-- AC -->
+
+        <TextView
+            android:id="@+id/tvAC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="AC:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <!-- DESCRIPTION TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Property Description"
+            android:textColor="#29213D"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+        <!-- DESCRIPTION -->
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Description"
+            android:textColor="#555555"
+            android:textSize="15sp" />
+
+
+        <!-- INQUIRY BUTTON -->
+
+        <Button
+            android:id="@+id/btnInquiry"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#673AB7"
+            android:text="💬 SEND INQUIRY"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

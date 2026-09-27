@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/property_card_background"
+    android:elevation="5dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tvPropertyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Property Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#29213D" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 Location"
+        android:textSize="15sp"
+        android:textColor="#666666"
+        android:layout_marginTop="7dp" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/rental_logo"
+        android:label="Rental Finder"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RentFinder">
+
+        <!-- SPLASH -->
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RentFinder">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <!-- AUTH -->
+
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterOTPActivity"
+            android:exported="false" />
+
+        <!-- STUDENT -->
+
+        <activity
+            android:name=".StudentHomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FindRoomsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PropertyDetailsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".StudentInquiryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SavedPropertiesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".StudentEnquiriesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".StudentVisitsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".StudentProfileActivity"
+            android:exported="false" />
+
+        <!-- OWNER -->
+
+        <activity
+            android:name=".OwnerHomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddPropertyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MyPropertiesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".OwnerRequestsActivity"
+            android:exported="false" />
+
+        <!-- ADMIN -->
+
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ManageStudentsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ManageOwnersActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ApprovePropertiesActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

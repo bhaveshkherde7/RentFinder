@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ================= HEADER ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Dashboard"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#29213D"/>
+
+                <TextView
+                    android:id="@+id/tvAdminEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, Admin 👋"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="🛡"
+                android:textSize="28sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/admin_icon_background"/>
+
+        </LinearLayout>
+
+
+        <!-- ================= WELCOME CARD ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/admin_welcome_background"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to RentFinder 👋"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage students, owners and properties"
+                android:textSize="14sp"
+                android:textColor="#E8E0FF"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#29213D"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- STUDENTS -->
+
+            <LinearLayout
+                android:id="@+id/cardStudents"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/admin_card_background"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎓"
+                    android:textSize="27sp"/>
+
+                <TextView
+                    android:id="@+id/tvStudents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#673AB7"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Students"
+                    android:textSize="12sp"
+                    android:textColor="#777777"/>
+
+            </LinearLayout>
+
+
+            <!-- OWNERS -->
+
+            <LinearLayout
+                android:id="@+id/cardOwners"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/admin_card_background"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏠"
+                    android:textSize="27sp"/>
+
+                <TextView
+                    android:id="@+id/tvOwners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#673AB7"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owners"
+                    android:textSize="12sp"
+                    android:textColor="#777777"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ================= MANAGEMENT ================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Management"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#29213D"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- MANAGE STUDENTS -->
+
+        <LinearLayout
+            android:id="@+id/layoutStudents"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:background="@drawable/admin_card_background"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="🎓"
+                android:textSize="25sp"
+                android:background="@drawable/admin_small_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Students"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#29213D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View and manage student accounts"
+                    android:textSize="12sp"
+                    android:textColor="#888888"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="›"
+                android:textSize="30sp"
+                android:textColor="#673AB7"/>
+
+        </LinearLayout>
+
+
+        <!-- MANAGE OWNERS -->
+
+        <LinearLayout
+            android:id="@+id/layoutOwners"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/admin_card_background"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="🏠"
+                android:textSize="25sp"
+                android:background="@drawable/admin_small_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Owners"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#29213D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View and manage property owners"
+                    android:textSize="12sp"
+                    android:textColor="#888888"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="›"
+                android:textSize="30sp"
+                android:textColor="#673AB7"/>
+
+        </LinearLayout>
+
+
+        <!-- APPROVE PROPERTIES -->
+
+        <LinearLayout
+            android:id="@+id/layoutProperties"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/admin_card_background"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="✅"
+                android:textSize="25sp"
+                android:background="@drawable/admin_small_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Approve Properties"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#29213D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review pending room listings"
+                    android:textSize="12sp"
+                    android:textColor="#888888"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="›"
+                android:textSize="30sp"
+                android:textColor="#673AB7"/>
+
+        </LinearLayout>
+
+
+        <!-- COMPLAINTS -->
+
+        <LinearLayout
+            android:id="@+id/layoutComplaints"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/admin_card_background"
+            android:elevation="3dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="⚠"
+                android:textSize="25sp"
+                android:background="@drawable/admin_small_icon"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complaints"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#29213D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View and resolve complaints"
+                    android:textSize="12sp"
+                    android:textColor="#888888"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="›"
+                android:textSize="30sp"
+                android:textColor="#673AB7"/>
+
+        </LinearLayout>
+
+
+        <!-- LOGOUT -->
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="LOGOUT"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/admin_logout_background"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

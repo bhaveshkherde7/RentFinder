@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ============================== -->
+    <!-- INTERNET PERMISSION -->
+    <!-- Required for Email OTP / API -->
+    <!-- ============================== -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/rental_logo"
+        android:label="Rental Finder"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RentFinder">
+
+        <!-- ============================== -->
+        <!-- SPLASH SCREEN -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RentFinder">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- ============================== -->
+        <!-- ONBOARDING -->
+        <!-- 3 SWIPE PAGES -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+
+
+        <!-- ============================== -->
+        <!-- LOGIN -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+
+        <!-- ============================== -->
+        <!-- REGISTER -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+
+        <!-- ============================== -->
+        <!-- REGISTER OTP -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".RegisterOTPActivity"
+            android:exported="false" />
+
+
+        <!-- ============================== -->
+        <!-- LOGIN OTP -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".OTPActivity"
+            android:exported="false" />
+
+
+        <!-- ============================== -->
+        <!-- STUDENT -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".StudentHomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FindRoomsActivity"
+            android:exported="false" />
+
+
+        <!-- ============================== -->
+        <!-- OWNER -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".OwnerHomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PostRoomActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MyPropertiesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".OwnerRequestsActivity"
+            android:exported="false" />
+
+
+        <!-- ============================== -->
+        <!-- ADMIN -->
+        <!-- ============================== -->
+
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

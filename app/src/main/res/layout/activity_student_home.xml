@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F4FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, Student 👋"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#29213D"/>
+
+                <TextView
+                    android:id="@+id/tvAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find rooms and PGs near you"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="🎓"
+                android:textSize="25sp"
+                android:background="@drawable/student_icon_background"/>
+
+        </LinearLayout>
+
+
+        <!-- SEARCH CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/student_search_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Your Perfect Stay 🔍"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search affordable rooms, PGs and hostels"
+                android:textSize="14sp"
+                android:textColor="#EDE7F6"
+                android:layout_marginTop="6dp"/>
+
+            <Button
+                android:id="@+id/btnFindRooms"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="🔍  FIND ROOMS"
+                android:textStyle="bold"
+                android:textColor="#673AB7"
+                android:background="@drawable/student_search_button"
+                android:layout_marginTop="18dp"/>
+
+        </LinearLayout>
+
+
+        <!-- QUICK ACTIONS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Actions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#29213D"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- SAVED -->
+
+        <Button
+            android:id="@+id/btnSaved"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="❤️   Saved Properties"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:background="@drawable/student_menu_background"/>
+
+
+        <!-- ENQUIRIES -->
+
+        <Button
+            android:id="@+id/btnEnquiries"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="💬   My Enquiries"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:background="@drawable/student_menu_background"
+            android:layout_marginTop="10dp"/>
+
+
+        <!-- VISITS -->
+
+        <Button
+            android:id="@+id/btnVisits"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📅   Visit Requests"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:background="@drawable/student_menu_background"
+            android:layout_marginTop="10dp"/>
+
+
+        <!-- PROFILE -->
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="👤   My Profile"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:background="@drawable/student_menu_background"
+            android:layout_marginTop="10dp"/>
+
+
+        <!-- LOGOUT -->
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="LOGOUT"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:background="@drawable/logout_button_background"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
